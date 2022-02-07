@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
+  showDetail = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  logTest() {
+    console.log("Button Test");
+    !this.showDetail;
+    console.log("Current showDetail status: ", this.showDetail);
   }
 
 }
